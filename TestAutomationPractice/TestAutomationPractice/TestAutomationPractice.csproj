@@ -62,6 +62,11 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>SearchResultsPage.feature.cs</LastGenOutput>
     </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\MyAccount.feature">
+      <Visible>False</Visible>
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>MyAccount.feature.cs</LastGenOutput>
+    </SpecFlowFeatureFiles>
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Features\Footer.feature.cs">
@@ -75,6 +80,9 @@
     </Compile>
     <Compile Update="Pages\SearchResultsPage.feature.cs">
       <DependentUpon>SearchResultsPage.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\MyAccount.feature.cs">
+      <DependentUpon>MyAccount.feature</DependentUpon>
     </Compile>
   </ItemGroup>
 </Project>
