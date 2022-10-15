@@ -12,6 +12,7 @@ namespace TestAutomationPractice.Pages
         public By contactUs = By.Id("contact-link");
         public By searchfield = By.Id("search_query_top");
         public By searchBtn = By.Name("submit_search");
+        public By signIn = By.ClassName("login");
 
 
         public HomePage(IWebDriver driver)
@@ -19,7 +20,7 @@ namespace TestAutomationPractice.Pages
             this.driver = driver;
             var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(60));
             wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(homepage));
-            
+
         }
     }
 }
