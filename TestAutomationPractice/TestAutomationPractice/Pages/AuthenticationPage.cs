@@ -10,6 +10,8 @@ namespace TestAutomationPractice.Pages
         public By authenticationpage = By.Id("authentication");
         public By username = By.Id("email");
         public By Password = By.Id("password");
+        public By email = By.Id("create_email");
+        public By createAcc = By.Id("SubmitCreate");
      
 
 

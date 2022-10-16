@@ -67,6 +67,11 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>MyAccount.feature.cs</LastGenOutput>
     </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\PDPfeature.feature">
+      <Visible>False</Visible>
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>PDPfeature.feature.cs</LastGenOutput>
+    </SpecFlowFeatureFiles>
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Features\Footer.feature.cs">
@@ -83,6 +88,9 @@
     </Compile>
     <Compile Update="Features\MyAccount.feature.cs">
       <DependentUpon>MyAccount.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\PDPfeature.feature.cs">
+      <DependentUpon>PDPfeature.feature</DependentUpon>
     </Compile>
   </ItemGroup>
 </Project>
