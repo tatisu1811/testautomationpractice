@@ -69,7 +69,7 @@ namespace AutomationPracticeFramework.Steps
             ut.EnterTextInElement(sup.password, TestConstants.Password);
             ut.EnterTextInElement(sup.address, TestConstants.Adress);
             ut.EnterTextInElement(sup.city, TestConstants.City);
-            ut.DropdownSelect(sup.state, TestConstants.State);
+            ut.DropDownSelect(sup.state, TestConstants.State);
             ut.EnterTextInElement(sup.zipCode, TestConstants.ZipCode);
             ut.EnterTextInElement(sup.phone, TestConstants.MobilePhone);
 

@@ -25,7 +25,7 @@ namespace TestAutomationPractice.Steps
 
         {
             ContactUsPage cup = new ContactUsPage(Driver);
-            ut.DropdownSelect(cup.subjectheading, heading);
+            ut.DropDownSelect(cup.subjectheading, heading);
             ut.EnterTextInElement(cup.contactEmail, ut.GenerateRandomEmail());
             ut.EnterTextInElement(cup.message, message);
         }

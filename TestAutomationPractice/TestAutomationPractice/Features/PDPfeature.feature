@@ -1,4 +1,4 @@
-﻿Feature: PDP
+Feature: PDP
 	In order to buy product
 	As a user
 	I want to interact with product details

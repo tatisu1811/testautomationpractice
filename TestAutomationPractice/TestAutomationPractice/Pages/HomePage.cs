@@ -5,7 +5,7 @@ using TestAutomationPractice.Helpers;
 
 namespace TestAutomationPractice.Pages
 {
-    class HomePage : Base 
+    class HomePage 
     {
         readonly IWebDriver driver;
         public By homepage = By.Id("index");
@@ -20,6 +20,7 @@ namespace TestAutomationPractice.Pages
             this.driver = driver;
             var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(60));
             wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(homepage));
+
 
         }
     }
