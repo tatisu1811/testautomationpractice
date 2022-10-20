@@ -100,7 +100,7 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.When("user fill all required field with \'webmaster\' heading and QA kurs message", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 10
- testRunner.And("user submits the fomr", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("user submits the form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 11
     testRunner.Then("message \'Your message has been successfully sent to our team.\'is presented to the" +

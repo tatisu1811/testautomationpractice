@@ -7,7 +7,7 @@ namespace TestAutomationPractice.Pages
     public class MyAccountPage
     {
         readonly IWebDriver driver;
-        public By myaccountpage= By.Id("myaccount");
+        public By myaccountpage= By.Id("my-account");
         public By signOutbtn = By.Id("logout");
 
         public MyAccountPage(IWebDriver driver)
@@ -18,9 +18,6 @@ namespace TestAutomationPractice.Pages
 
         }
 
-        //public MyAccountPage(IWebDriver driver)
-        //{
-        //    this.driver = driver;
-        //}
+        
     }
 }
