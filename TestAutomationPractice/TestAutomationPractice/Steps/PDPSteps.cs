@@ -63,12 +63,11 @@ namespace TestAutomationPractice.Steps
         [Then(@"cart summary is displayed and product is added to cart")]
         public void ThenCartSummaryIsDisplayedAndProductIsAddedToCart()
         {
-            PDPage pdp = new PDPage(Driver);
             CartPage cp = new CartPage(Driver);
-            Assert.IsTrue(pdp.InformationPageIsDisplayed(), "Expected page is NOT displayed");
-            Assert.True(ut.ElementExists(cp.ProductName), "Product is NOT added to cart");
-            //Assert.That(ut.ReturnTextFromElement(cp.ProductName), Is.EqualTo(), "Product is Not added to cart");
+            Assert.True(ut.ElementIsDisplayed(cp.ShoppingCartSummary));
+            Assert.True(ut.ElementIsDisplayed(cp.SummaryProductsQuantity));
 
         }
+
     }
 }
