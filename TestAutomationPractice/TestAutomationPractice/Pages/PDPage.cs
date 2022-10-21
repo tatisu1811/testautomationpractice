@@ -12,8 +12,8 @@ namespace TestAutomationPractice.Pages
         public By productName = By.XPath("//h1[@itemprop='name']");
         public By addToCartBtn = By.Id("add_to_cart");
         public By proToCheckOutBtn = By.XPath("//*[@title='Proceed to checkout']");
+        //public By proToCheckOutBtn = By.ClassName("button-medium");
         public By cartPage = By.Id("order");
-        
 
         public PDPage(IWebDriver driver)
         {
@@ -22,12 +22,12 @@ namespace TestAutomationPractice.Pages
             wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(pdPage));
         }
 
-        public bool InformationPageIsDisplayed()
-        {
-            By cartPage = By.Id("order");
-            var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(15));
-            return wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(cartPage)).Displayed;
+        //public bool InformationPageIsDisplayed()
+        //{
+        //By cartPage = By.Id("order");
+        //var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(15));
+        //return wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(cartPage)).Displayed;
 
-        }
+        //}
     }
 }

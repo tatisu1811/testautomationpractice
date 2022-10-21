@@ -5,11 +5,12 @@ using OpenQA.Selenium.Support.UI;
 namespace TestAutomationPractice.Pages
 {
     public class PLPage
+
     {
+
         readonly IWebDriver driver;
         public By plPage = By.Id("category");
-        public By firstProduct = By.ClassName("product_img_Link");
-
+        public By firstProduct = By.ClassName("product_img_link");
 
         public PLPage(IWebDriver driver)
         {
@@ -18,4 +19,6 @@ namespace TestAutomationPractice.Pages
             wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(plPage));
         }
     }
+
+
 }
