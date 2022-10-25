@@ -17,3 +17,11 @@ Scenario: User can create an account
     When user submits the sign in form
     Then user will be logged in
     And user's full name is displayed
+
+Scenario: Registered user can update last name
+    And user enters correct credentials
+    When user submits the sign in form
+    And user clicks on personal information button
+    And user updates last name
+    And clicks on Save button
+    Then user's last name is updated 

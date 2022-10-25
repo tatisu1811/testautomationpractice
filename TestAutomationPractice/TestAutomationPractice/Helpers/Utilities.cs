@@ -19,7 +19,10 @@ namespace TestAutomationPractice.Helpers
         {
             return string.Format("email{0}@malinator.com", RandomName.Next(10000, 1000000));
         }
-
+        public string GenerateRandomString ()
+        {
+            return string.Format("last name{0}", RandomName.Next(1000, 1000000));
+        }
         internal static void ClickOnElement(object signin)
         {
             throw new NotImplementedException();

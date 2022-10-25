@@ -9,6 +9,8 @@ namespace TestAutomationPractice.Pages
         readonly IWebDriver driver;
         public By myaccountpage= By.Id("my-account");
         public By signOutbtn = By.Id("logout");
+        public By myPersonalInfBtn = By.CssSelector("[title='Information']");
+        
 
         public MyAccountPage(IWebDriver driver)
         {

@@ -87,6 +87,38 @@ namespace AutomationPracticeFramework.Steps
         {
         Assert.True(ut.TextPresentInElement(personData.FullName), "user's full name is not dispalayed");
         }
+
+        [When(@"user clicks on my personal information button")]
+        public void WhenUserClicksOnMyPersonalInformationButton()
+        {
+            MyAccountPage mp = new MyAccountPage(Driver);
+            ut.ClickOnElement(mp.myPersonalInfBtn);
+        }
+
+        [When(@"user updates last name")]
+        public void WhenUserUpdatesLastName(string heading, string message)
+        {
+            PersonInfoPage pi = new PersonInfoPage(Driver);
+            var lastName = ut.GenerateRandomString();
+            Driver.FindElement(pi.Lastname).Clear();
+            personData.FullName = TestConstants.FirstName + "" + lastName;
+            ut.EnterTextInElement(pi.Lastname, lastName);
+            ut.EnterTextInElement(pi.CurrentPswd, TestConstants.Password);
+        }
+
+        [When(@"clicks on Save button")]
+        public void WhenClicksOnSaveButton()
+        {
+            PersonInfoPage pi = new PersonInfoPage(Driver);
+            ut.ClickOnElement(pi.SaveBtn);
+        }
+
+        [Then(@"users last name is updated")]
+        public void ThenUsersLastNameIsUpdated()
+        {
+            PersonInfoPage pi = new PersonInfoPage(Driver);
+            Assert.That(ut.ReturnTextFromElement(pi.myNameBTn), Does.Contain(personData.FullName), "last name is not updated");
+        }
     }
 
     
